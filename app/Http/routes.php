@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('index');
 });
 
+Route::get('backend', function() {
+	return view('backend');
+});
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes

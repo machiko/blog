@@ -2,65 +2,103 @@
 
 @section('content')
 
-<!-- Introduction Row -->
-<div class="row">
-    <div class="col-lg-12">
-        <h1 class="page-header">About Us
-            <small>It's Nice to Meet You!</small>
-        </h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, explicabo dolores ipsam aliquam inventore corrupti eveniet quisquam quod totam laudantium repudiandae obcaecati ea consectetur debitis velit facere nisi expedita vel?</p>
+<div class="mdl-blog mdl-layout mdl-js-layout has-drawer is-upgraded">
+  <main class="mdl-layout__content">
+    <div class="mdl-blog__posts mdl-grid">
+      <div class="mdl-card coffee-pic mdl-cell mdl-cell--8-col">
+        <div class="mdl-card__media mdl-color-text--grey-50">
+          <h3><a href="entry.html">Coffee Pic</a></h3>
+        </div>
+        <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
+          <div class="minilogo"></div>
+          <div>
+            <strong>The Newist</strong>
+            <span>2 days ago</span>
+          </div>
+        </div>
+      </div>
+      <div class="mdl-card something-else mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop">
+        <button class="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--fab mdl-color--accent">
+          <i class="material-icons mdl-color-text--white" role="presentation">add</i>
+          <span class="visuallyhidden">add</span>
+        </button>
+        <div class="mdl-card__media mdl-color--white mdl-color-text--grey-600">
+          <img src="{{asset('build/images/logo.png')}}">
+          +1,337
+        </div>
+        <div class="mdl-card__supporting-text meta meta--fill mdl-color-text--grey-600">
+          <div>
+            <strong>The Newist</strong>
+          </div>
+          <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="menubtn">
+            <li class="mdl-menu__item">About</li>
+            <li class="mdl-menu__item">Message</li>
+            <li class="mdl-menu__item">Favorite</li>
+            <li class="mdl-menu__item">Search</li>
+          </ul>
+          <button id="menubtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+            <i class="material-icons" role="presentation">more_vert</i>
+            <span class="visuallyhidden">show menu</span>
+          </button>
+        </div>
+      </div>
+      <!-- <div class="mdl-card on-the-road-again mdl-cell mdl-cell--12-col">
+        <div class="mdl-card__media mdl-color-text--grey-50">
+          <h3><a href="entry.html">On the road again</a></h3>
+        </div>
+        <div class="mdl-color-text--grey-600 mdl-card__supporting-text">
+          Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
+        </div>
+        <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
+          <div class="minilogo"></div>
+          <div>
+            <strong>The Newist</strong>
+            <span>2 days ago</span>
+          </div>
+        </div>
+      </div>
+      <div class="mdl-card amazing mdl-cell mdl-cell--12-col">
+        <div class="mdl-card__title mdl-color-text--grey-50">
+          <h3 class="quote"><a href="entry.html">I couldn’t take any pictures but this was an amazing thing…</a></h3>
+        </div>
+        <div class="mdl-card__supporting-text mdl-color-text--grey-600">
+          Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
+        </div>
+        <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
+          <div class="minilogo"></div>
+          <div>
+            <strong>The Newist</strong>
+            <span>2 days ago</span>
+          </div>
+        </div>
+      </div>
+      <div class="mdl-card shopping mdl-cell mdl-cell--12-col">
+        <div class="mdl-card__media mdl-color-text--grey-50">
+          <h3><a href="entry.html">Shopping</a></h3>
+        </div>
+        <div class="mdl-card__supporting-text mdl-color-text--grey-600">
+          Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
+        </div>
+        <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
+          <div class="minilogo"></div>
+          <div>
+            <strong>The Newist</strong>
+            <span>2 days ago</span>
+          </div>
+        </div>
+      </div> -->
+      <nav class="demo-nav mdl-cell mdl-cell--12-col">
+        <div class="section-spacer"></div>
+        <a href="entry.html" class="demo-nav__button" title="show more">
+          More
+          <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+            <i class="material-icons" role="presentation">arrow_forward</i>
+          </button>
+        </a>
+      </nav>
     </div>
+  </main>
+  <div class="mdl-layout__obfuscator"></div>
 </div>
-
-<!-- Team Members Row -->
-<div class="row">
-    <div class="col-lg-12">
-        <h2 class="page-header">Our Team</h2>
-    </div>
-    <div class="col-lg-4 col-sm-6 text-center">
-        <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
-        <h3>John Smith
-            <small>Job Title</small>
-        </h3>
-        <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
-    </div>
-    <div class="col-lg-4 col-sm-6 text-center">
-        <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
-        <h3>John Smith
-            <small>Job Title</small>
-        </h3>
-        <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
-    </div>
-    <div class="col-lg-4 col-sm-6 text-center">
-        <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
-        <h3>John Smith
-            <small>Job Title</small>
-        </h3>
-        <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
-    </div>
-    <div class="col-lg-4 col-sm-6 text-center">
-        <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
-        <h3>John Smith
-            <small>Job Title</small>
-        </h3>
-        <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
-    </div>
-    <div class="col-lg-4 col-sm-6 text-center">
-        <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
-        <h3>John Smith
-            <small>Job Title</small>
-        </h3>
-        <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
-    </div>
-    <div class="col-lg-4 col-sm-6 text-center">
-        <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
-        <h3>John Smith
-            <small>Job Title</small>
-        </h3>
-        <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
-    </div>
-</div>
-
-<hr>
 
 @stop

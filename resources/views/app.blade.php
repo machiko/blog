@@ -10,9 +10,11 @@
     <meta name="author" content="">
 
     <title>Reyesssss</title>
-
+    <link rel="shortcut icon" href="{{ asset('build/images/favicon.ico') }}" type="image/x-icon" />
     <!-- Core CSS -->
     <link rel="stylesheet" type="text/css" href="{{ elixir('css/all.css') }}">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -26,17 +28,12 @@
 <body>
     @include('partial/_header')
 
-    <div class="container">
-        @yield('content')
-    </div>
+    @yield('content')
 
     @include('partial/_footer')
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <!-- jQuery & Bootstrap Core JavaScript-->
+    <script src="{{ elixir('js/all.js') }}"></script>
 
 </body>
 
